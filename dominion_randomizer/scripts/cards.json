@@ -1,0 +1,542 @@
+[
+    {
+        "name_jp": "銅貨",
+        "name_en": "Copper",
+        "expansion": "基本",
+        "cost": {
+            "coin": "0",
+            "potion": null,
+            "debt": null
+        },
+        "category": "基本",
+        "types": [
+            "財宝"
+        ],
+        "treasure": "0",
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "１コイン",
+        "text_en": "《2nd Edition》$1《1st Edition》$1"
+    },
+    {
+        "name_jp": "銀貨",
+        "name_en": "Silver",
+        "expansion": "基本",
+        "cost": {
+            "coin": "3",
+            "potion": null,
+            "debt": null
+        },
+        "category": "基本",
+        "types": [
+            "財宝"
+        ],
+        "treasure": "2",
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "２コイン",
+        "text_en": "《2nd Edition》$2《1st Edition》$2"
+    },
+    {
+        "name_jp": "金貨",
+        "name_en": "Gold",
+        "expansion": "基本",
+        "cost": {
+            "coin": "6",
+            "potion": null,
+            "debt": null
+        },
+        "category": "基本",
+        "types": [
+            "財宝"
+        ],
+        "treasure": "3",
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "３コイン",
+        "text_en": "《2nd Edition》$3《1st Edition》$3"
+    },
+    {
+        "name_jp": "屋敷",
+        "name_en": "Estate",
+        "expansion": "基本",
+        "cost": {
+            "coin": "2",
+            "potion": null,
+            "debt": null
+        },
+        "category": "基本",
+        "types": [
+            "勝利点"
+        ],
+        "treasure": null,
+        "vp": "1V",
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "１勝利点",
+        "text_en": "《2nd Edition》1 VP《1st Edition》1 VP"
+    },
+    {
+        "name_jp": "公領",
+        "name_en": "Duchy",
+        "expansion": "基本",
+        "cost": {
+            "coin": "5",
+            "potion": null,
+            "debt": null
+        },
+        "category": "基本",
+        "types": [
+            "勝利点"
+        ],
+        "treasure": null,
+        "vp": "3V",
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "３勝利点",
+        "text_en": "《2nd Edition》3 VP《1st Edition》3 VP"
+    },
+    {
+        "name_jp": "属州",
+        "name_en": "Province",
+        "expansion": "基本",
+        "cost": {
+            "coin": "8",
+            "potion": null,
+            "debt": null
+        },
+        "category": "基本",
+        "types": [
+            "勝利点"
+        ],
+        "treasure": null,
+        "vp": "6V",
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "６勝利点",
+        "text_en": "《2nd Edition》6 VP《1st Edition》6 VP"
+    },
+    {
+        "name_jp": "呪い",
+        "name_en": "Curse",
+        "expansion": "基本",
+        "cost": {
+            "coin": "0",
+            "potion": null,
+            "debt": null
+        },
+        "category": "基本",
+        "types": [
+            "呪い"
+        ],
+        "treasure": null,
+        "vp": "▲1V",
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "▲１勝利点",
+        "text_en": "《2nd Edition》-1 VP《1st Edition》-1 VP"
+    },
+    {
+        "name_jp": "冒険者",
+        "name_en": "Adventurer",
+        "expansion": "基本",
+        "cost": {
+            "coin": "6",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》-《第一版》あなたの山札から財宝カード２枚が公開されるまで、カードを公開する。公開した財宝カード２枚を手札に加え、他の公開したカードは捨て札に置く。",
+        "text_en": "《2nd Edition》-《1st Edition》Reveal cards from your deck until you reveal 2 Treasure cards.Put those Treasure cards in your hand and discard the other revealed cards."
+    },
+    {
+        "name_jp": "役人",
+        "name_en": "Bureaucrat",
+        "expansion": "基本",
+        "cost": {
+            "coin": "4",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション−アタック"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》銀貨を獲得し、デッキの上に置く。他のプレイヤーは全員、各自の手札から勝利点カードを１枚公開し、各自のデッキの上に置く。（手札に勝利点カードがない場合、手札を公開する。）《第一版》銀貨１枚を獲得し、あなたの山札の上に置く。他のプレイヤーは全員、自分の手札から勝利点カード１枚を公開し、自分の山札の上に置く。（手札に勝利点カードがない場合、手札を公開する。）",
+        "text_en": "《2nd Edition》Gain a Silver onto your deck. Each other player reveals a Victory card from their hand and puts it onto their deck (or reveals a hand with no Victory cards).《1st Edition》Gain a silver card; put it on top of your deck.Each other player reveals a Victory card from his hand and puts it on his deck (or reveals a hand with no Victory cards)."
+    },
+    {
+        "name_jp": "地下貯蔵庫",
+        "name_en": "Cellar",
+        "expansion": "基本",
+        "cost": {
+            "coin": "2",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": "1",
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》＋１アクション手札から好きな枚数のカードを捨て札にし、その枚数分だけデッキからカードを引く。《第一版》＋１アクション手札から好きな枚数のカードを捨て札にする。捨て札１枚につき、カードを１枚引く。",
+        "text_en": "《2nd Edition》+1 ActionDiscard any number of cards， then draw that many.《1st Edition》+1 ActionDiscard any number of cards.+1 Card per card discarded."
+    },
+    {
+        "name_jp": "宰相",
+        "name_en": "Chancellor",
+        "expansion": "基本",
+        "cost": {
+            "coin": "3",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": "2",
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》-《第一版》＋２コインあなたの山札のカードすべてを、即座に捨て札に置くことができる。",
+        "text_en": "《2nd Edition》-《1st Edition》+$2You may immediately put your deck into your discard pile."
+    },
+    {
+        "name_jp": "礼拝堂",
+        "name_en": "Chapel",
+        "expansion": "基本",
+        "cost": {
+            "coin": "2",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》あなたの手札から４枚までのカードを廃棄する。《第一版》あなたの手札から最大４枚までのカードを、廃棄する。",
+        "text_en": "《2nd Edition》Trash up to 4 cards from your hand.《1st Edition》Trash up to 4 cards from your hand."
+    },
+    {
+        "name_jp": "議事堂",
+        "name_en": "Council Room",
+        "expansion": "基本",
+        "cost": {
+            "coin": "5",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": "4",
+            "action": null,
+            "buy": "1",
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》＋４カードを引く＋１カードを購入他のプレイヤーは全員、カードを１枚引く。《第一版》＋４カードを引く＋１カードを購入他のプレイヤー全員は、カードを１枚引く。",
+        "text_en": "《2nd Edition》+4 Cards+1 BuyEach other player draws a card.《1st Edition》+4 Cards+1 BuyEach other player draws a card."
+    },
+    {
+        "name_jp": "祝宴",
+        "name_en": "Feast",
+        "expansion": "基本",
+        "cost": {
+            "coin": "4",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》-《第一版》このカードを廃棄する。コスト５コイン以下のカード１枚を獲得する。",
+        "text_en": "《2nd Edition》-《1st Edition》Trash this card.Gain a card costing up to $5."
+    },
+    {
+        "name_jp": "祝祭",
+        "name_en": "Festival",
+        "expansion": "基本",
+        "cost": {
+            "coin": "5",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": "2",
+            "buy": "1",
+            "money": "2",
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》＋２アクション＋１カードを購入＋２コイン《第一版》＋２アクション＋１カードを購入＋２コイン",
+        "text_en": "《2nd Edition》+2 Actions+1 Buy+$2《1st Edition》+2 Actions+1 Buy+$2"
+    },
+    {
+        "name_jp": "庭園",
+        "name_en": "Gardens",
+        "expansion": "基本",
+        "cost": {
+            "coin": "4",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "勝利点"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》あなたの所有するカード１０枚につき１勝利点になる。《第一版》あなたの山札のカード１０枚（端数切り捨て）につき勝利点１を得る。",
+        "text_en": "《2nd Edition》Worth 1 VP per 10 cards you have (round down).《1st Edition》Worth 1 VP for every 10 cards in your deck (rounded down)."
+    },
+    {
+        "name_jp": "研究所",
+        "name_en": "Laboratory",
+        "expansion": "基本",
+        "cost": {
+            "coin": "5",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": "2",
+            "action": "1",
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》＋２カードを引く＋１アクション《第一版》＋２カードを引く＋１アクション",
+        "text_en": "《2nd Edition》+2 Cards+1 Action《1st Edition》+2 Cards+1 Action"
+    },
+    {
+        "name_jp": "書庫",
+        "name_en": "Library",
+        "expansion": "基本",
+        "cost": {
+            "coin": "5",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": null,
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》あなたの手札が７枚になるまでカードを引く。この途中で引いたアクションカードは手札に加えず、脇に置いてもよい。脇に置いたカードは、カードを引き終えた後、捨て札にする。《第一版》あなたの手札が７枚になるまでカードを引く。この方法で引いたアクションカードを脇に置いてもよい。（７枚には数えない。）脇に置いたカードは、このアクションの後、捨て札にする。",
+        "text_en": "《2nd Edition》Draw until you have 7 cards in hand， skipping any Action cards you choose to; set those aside， discarding them afterwards.《1st Edition》Draw until you have 7 cards in hand.You may set aside any Action cards drawn this way， as you draw them; discard the set aside cards after you finish drawing."
+    },
+    {
+        "name_jp": "市場",
+        "name_en": "Market",
+        "expansion": "基本",
+        "cost": {
+            "coin": "5",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": "1",
+            "action": "1",
+            "buy": "1",
+            "money": "1",
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》＋１カードを引く＋１アクション＋１カードを購入＋１コイン《第一版》＋１カードを引く＋１アクション＋１カードを購入＋１コイン",
+        "text_en": "《2nd Edition》+1 Card+1 Action+1 Buy+$1《1st Edition》+1 Card+1 Action+1 Buy+$1"
+    },
+    {
+        "name_jp": "民兵",
+        "name_en": "Militia",
+        "expansion": "基本",
+        "cost": {
+            "coin": "4",
+            "potion": null,
+            "debt": null
+        },
+        "category": "王国",
+        "types": [
+            "アクション−アタック"
+        ],
+        "treasure": null,
+        "vp": null,
+        "gain": {
+            "card": null,
+            "action": null,
+            "buy": null,
+            "money": "2",
+            "vp": null,
+            "villager": null,
+            "coffer": null
+        },
+        "text_jp": "《第二版》＋２コイン他のプレイヤーは全員、各自の手札が３枚になるまで捨て札にする。《第一版》＋２コイン他のプレイヤーは全員、自分の手札が３枚になるまで捨て札をする。",
+        "text_en": "《2nd Edition》+$2Each other player discards down to 3 cards in hand.《1st Edition》+$2Each other player discards down to 3 cards in his hand."
+    }
+]
