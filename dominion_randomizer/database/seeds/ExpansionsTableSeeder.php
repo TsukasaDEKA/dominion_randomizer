@@ -24,7 +24,7 @@ class ExpansionsTableSeeder extends Seeder
         array('id'=>10,    'name_jp'=>'冒険',              'name_jp_pronunciations'=>'ぼうけん',             'name_en'=>'Adventures'),
         array('id'=>11,    'name_jp'=>'帝国',              'name_jp_pronunciations'=>'ていこく',             'name_en'=>'Empires'),
         array('id'=>12,    'name_jp'=>'夜想曲',          'name_jp_pronunciations'=>'やそうきょく',     'name_en'=>'Nocturne'),
-        array('id'=>13,    'name_jp'=>'ルネサンス',  'name_jp_pronunciations'=>'るねさんす',         'name_en'=>'Renaissance'),
+        array('id'=>13,    'name_jp'=>'Renaissance',  'name_jp_pronunciations'=>'るねさんす',         'name_en'=>'Renaissance'),
         array('id'=>14,    'name_jp'=>'プロモ',          'name_jp_pronunciations'=>'ぷろも',                 'name_en'=>'Promo'),
       );
       foreach ($expansions as $expansion) {
