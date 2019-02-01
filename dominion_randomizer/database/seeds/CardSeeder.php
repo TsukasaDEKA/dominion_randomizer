@@ -90,7 +90,7 @@ class CardSeeder extends Seeder
       '呪い',
       'ポーション'
     );
-    private $effect_type = array('Project', 'Artifact', 'イベント', 'ランドマーク', '呪詛',  '祝福', '状態');
+    private $effect_type = array('PROJECT', 'ARTIFACT', 'イベント', 'ランドマーク', '呪詛',  '祝福', '状態');
 
     public function run()
     {
