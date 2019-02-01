@@ -23,6 +23,7 @@ class KingdomController extends Controller
         "num_of_card"=>count($kingdom),
         "kingdom"=> $kingdom
       );
+
       return json_encode($response, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     }
 
@@ -33,7 +34,7 @@ class KingdomController extends Controller
       $all_expansions_id = array_column(Expansion::get( )->toArray(), 'id');
       $expansion_ids = empty($request->input('expansions')) ? $all_expansions_id : json_decode($request->input('expansions'));
 
-      $max_attack = empty($request->input('max_attack')) ? 10 : (int)($request->input('max_attack'));
+      $max_attack = empty($request->input('max_attack')) ? $num_of_card : (int)($request->input('max_attack'));
 
       $requested_params = array(
         "num_of_card" => $num_of_card,
@@ -49,7 +50,29 @@ class KingdomController extends Controller
       ->whereIn('expansion_id', $kingdom_params["expansion_ids"])
       ->inRandomOrder()->take($kingdom_params["num_of_card"])->get();
 
+      $kingdom = $this->regulate_attack_card_num($kingdom, $kingdom_params["max_attack"], $kingdom_params["expansion_ids"]);
       return $kingdom;
+    }
+
+    protected function regulate_attack_card_num($kingdom, $max_attack, $expansion_ids)
+    {
+      $attack_cards = $kingdom->whereIn('attack', true);
+      $other_cards = $kingdom->whereIn('attack', false);
+
+      if(count($attack_cards) <= $max_attack){
+        return $kingdom;
+      }else{
+        $reduce_num = count($attack_cards) - $max_attack;
+        $reduced_attack_cards = $attack_cards->take($max_attack);
+        $alternative_cards = DeckResourceCard::where('randomizer', true)
+        ->whereIn('expansion_id', $expansion_ids)
+        ->whereNotIn('id', array_column($other_cards->toArray(), 'id'))->where('attack', false)
+        ->take($reduce_num)->get();
+        // echo json_encode(count($other_cards), JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT)."\n\r";
+        $kingdom = $alternative_cards->concat($other_cards)->concat($reduced_attack_cards);
+        echo json_encode(array_column($alternative_cards->toArray(), 'expansion_id'), JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT)."\n\r";
+        return $kingdom;
+      }
     }
 
     /**
