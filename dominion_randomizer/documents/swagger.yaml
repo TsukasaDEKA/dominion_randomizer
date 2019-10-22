@@ -1,0 +1,171 @@
+swagger: "2.0"
+info:
+  description: ""
+  version: "0.1.0"
+  title: "Dominion Randomizer"
+  # termsOfService: "http://deka1066.work/"
+  # contact:
+  #   email: ""
+  # license:
+  #   name: "Apache 2.0"
+  #   url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "127.0.0.1:8888"
+basePath: "/"
+tags:
+- name: "kingdom"
+  description: "Dominion card set "
+schemes:
+# - "https"
+- "http"
+paths:
+  /api/kingdom:
+    get:
+      tags:
+      - "kingdom"
+      summary: "Get card list for a game"
+      description: ""
+      operationId: "getKingdom"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      # - name: "num_of_card"
+      #   in: "query"
+      #   description: "Pet object that needs to be added to the store"
+      #   required: true
+      #   schema:
+      #     $ref: '#/definitions/Order'
+      - name: "num_of_card"
+        in: "query"
+        description: "The max number of card which included the kingdom"
+        required: true
+        type: integer
+      - name: "action_gain_required"
+        in: "query"
+        description: "Include action gainer card (Action +2 and more) at least one or not"
+        required: false
+        type: boolean
+      - name: "card_gain_required"
+        in: "query"
+        description: "Include card gainer card (Card +2 and more) at least one or not"
+        required: false
+        type: boolean
+      - name: "required_costs"
+        in: "query"
+        description: "The max number of card which included the kingdom"
+        required: true
+        type: string
+        # schema:
+        #   type: string
+        #   example: '{"2":1,"3":2,"4":1}'
+        #   $ref: "#/definitions/RequiredCosts"
+      responses:
+        200:
+          description: "OK"
+          schema:
+            $ref: '#/definitions/KingdomCards'
+          # schema:
+          #   $ref: '#/definitions/KingdomCards'
+        # 405:
+        #   description: "Invalid input"
+# TODO: Add security setting.
+securityDefinitions:
+  petstore_auth:
+    type: "oauth2"
+    authorizationUrl: "http://petstore.swagger.io/oauth/dialog"
+    flow: "implicit"
+    scopes:
+      write:pets: "modify pets in your account"
+      read:pets: "read your pets"
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+definitions:
+  RequiredCosts:
+    type: "object"
+    properties:
+      "\"1\"":
+        type: "integer"
+        format: "int"
+        default: 0
+      "\"2\"":
+        type: "integer"
+        format: "int"
+        default: 0
+      "\"3\"":
+        type: "integer"
+        format: "int"
+        default: 0
+      "\"4\"":
+        type: "integer"
+        format: "int"
+        default: 0
+      "\"5\"":
+        type: "integer"
+        format: "int"
+        default: 0
+      "\"6\"":
+        type: "integer"
+        format: "int"
+        default: 0
+      "\"7\"":
+        type: "integer"
+        format: "int"
+        default: 0
+    xml:
+      name: "RequiredCosts"
+  KingdomCards:
+    type: "object"
+    properties:
+      "num_of_card":
+        type: "integer"
+        format: "int"
+      "kingdom":
+        type: "array"
+        items:
+          type: "object"
+          properties:
+            id:
+              type: integer
+            name_jp:
+              type: string
+            name_jp_pronunciations:
+              type: string
+            name_en:
+              type: string
+            expansion_id:
+              type: integer
+            vp:
+              type: integer
+            cost_coin:
+              type: integer
+            cost_potion:
+              type: integer
+            cost_debt:
+              type: integer
+            gain_card:
+              type: integer
+            gain_action:
+              type: integer
+            gain_buy:
+              type: integer
+            gain_money:
+              type: integer
+            gain_vp:
+              type: integer
+            gain_villager:
+              type: integer
+            gain_coffer:
+              type: integer
+            text_jp:
+              type: string
+            text_en:
+              type: string
+            event:
+              type: string
+    # xml:
+    #   name: "KingdomCardsXml"
